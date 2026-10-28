@@ -61,10 +61,6 @@ export const Header: React.FC = () => {
                   EquipCommons
                 </span>
               </button>
-              <span className="hidden 2xl:inline text-xs text-slate-400">·</span>
-              <span className="hidden 2xl:inline text-xs text-slate-500 font-medium">
-                Institutional Resource Exchange
-              </span>
             </div>
 
             {/* Zone 2: Concise single-line text navigation links */}
@@ -98,7 +94,7 @@ export const Header: React.FC = () => {
                 }`}
               >
                 <span className={`w-2 h-2 rounded-full ${demoIgnoreCheckInWindow ? 'bg-emerald-500 animate-pulse' : 'bg-slate-300'}`} />
-                <span className="whitespace-nowrap">Demo: Check-in Bypass {demoIgnoreCheckInWindow ? 'ON' : 'OFF'}</span>
+                <span className="whitespace-nowrap">Bypass {demoIgnoreCheckInWindow ? 'ON' : 'OFF'}</span>
               </button>
 
               {/* 15-Minute Rule / Overdue Check Simulator */}
@@ -108,7 +104,7 @@ export const Header: React.FC = () => {
                 className="hidden lg:flex items-center gap-1.5 px-2.5 py-1.5 text-xs font-medium text-amber-800 bg-amber-50 hover:bg-amber-100 border border-amber-200 rounded-lg transition-colors whitespace-nowrap"
               >
                 <ClockAlert className="w-3.5 h-3.5 text-amber-700" />
-                <span>Simulate 15m Expiries</span>
+                <span className="whitespace-nowrap">15m check</span>
               </button>
 
               {/* Notification Bell */}
@@ -132,7 +128,6 @@ export const Header: React.FC = () => {
                 className="hidden xl:flex items-center gap-1.5 px-2.5 py-1.5 text-xs text-slate-500 hover:text-slate-900 hover:bg-slate-100 rounded-md transition-colors"
               >
                 <RotateCcw className="w-3.5 h-3.5" />
-                <span className="whitespace-nowrap">Reset</span>
               </button>
 
 
