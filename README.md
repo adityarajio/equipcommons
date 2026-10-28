@@ -131,8 +131,8 @@ Backend with real auth and per-institution permissions, email and SMS notificati
 ## Disclosures
 
 - **Libraries and frameworks:** React, Vite, Tailwind CSS, lucide-react, @noble/hashes.
-- **AI tools used:** [list any AI tools you used to write code, and how much]
-- **Templates or pre-existing code:** [state whether any were used]
+- **AI tools used:** Google AI studio, Claude
+- **Templates or pre-existing code:** Next.js Boiler template
 
 ## Team
 
