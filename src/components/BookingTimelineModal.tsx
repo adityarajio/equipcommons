@@ -35,7 +35,7 @@ export const BookingTimelineModal: React.FC<BookingTimelineModalProps> = ({ book
             <div className="flex items-center gap-2 text-xs text-sky-400 font-mono">
               <span>Transaction #{booking.id.slice(-8)}</span>
               <span>·</span>
-              <span className="capitalize">{booking.status.replace('_', ' ')}</span>
+              <span className="capitalize">{booking.status.replace(/_/g, ' ')}</span>
             </div>
             <h3 className="text-base font-bold text-white mt-0.5">
               Auditable Transaction Lifecycle Timeline
@@ -75,7 +75,7 @@ export const BookingTimelineModal: React.FC<BookingTimelineModalProps> = ({ book
             <div>
               <span className="text-[10px] text-slate-400 uppercase font-semibold block">Settlement</span>
               <span className="font-semibold text-xs text-slate-800 capitalize">
-                {booking.depositSettlement ? booking.depositSettlement.status.replace('_', ' ') : 'Pending Session'}
+                {booking.depositSettlement ? booking.depositSettlement.status.replace(/_/g, ' ') : 'Pending Session'}
               </span>
             </div>
           </div>
@@ -100,14 +100,14 @@ export const BookingTimelineModal: React.FC<BookingTimelineModalProps> = ({ book
                     <div className="space-y-1">
                       <div className="flex flex-wrap items-center gap-2">
                         <span className="px-2 py-0.5 rounded text-[10px] font-semibold uppercase bg-slate-100 text-slate-800 border border-slate-200">
-                          {log.actionType.replace('_', ' ')}
+                          {log.actionType.replace(/_/g, ' ')}
                         </span>
                         <span className="font-mono text-[11px] text-slate-400">
                           {new Date(log.timestamp).toLocaleTimeString([], { hour: '2-digit', minute: '2-digit', second: '2-digit' })}
                         </span>
                         <span className="text-slate-400">·</span>
                         <span className="font-medium text-slate-700">
-                          {log.actorName} ({log.actorRole.replace('_', ' ')})
+                          {log.actorName} ({log.actorRole.replace(/_/g, ' ')})
                         </span>
                       </div>
 

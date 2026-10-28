@@ -226,7 +226,7 @@ export const AuditLogView: React.FC = () => {
                     {/* Action Type */}
                     <td className="py-3.5 px-4 whitespace-nowrap">
                       <span className={`px-2 py-0.5 rounded text-[10px] font-semibold tracking-wide uppercase border ${actionBadgeClass}`}>
-                        {entry.actionType.replace('_', ' ')}
+                        {entry.actionType.replace(/_/g, ' ')}
                       </span>
                     </td>
 
