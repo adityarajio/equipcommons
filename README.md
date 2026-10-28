@@ -4,7 +4,7 @@
 
 Built for the Code Conqueror India 2026 hackathon, problem statement: *Unlock Underused Equipment and Spaces*.
 
-**Live demo:** will be added soon
+**Live demo:** [(https://equipcommons.vercel.app/)]
 **Repository:** [https://github.com/adityarajio/equipcommons]
 
 ---
