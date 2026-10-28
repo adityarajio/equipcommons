@@ -1,0 +1,6 @@
+{
+  "name": "EquipCommons - Institutional Resource Sharing & Access Platform",
+  "description": "Trusted institutional platform for colleges, labs, and makerspaces to safely share underused high-value equipment and facilities with verification, fair allocation, and condition tracking.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
